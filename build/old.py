@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 import sys
 
@@ -19,29 +19,22 @@ def encrypt_decrypt(input_text, key, mode):
 def main():
     if len(sys.argv) < 4 or sys.argv[1] == "--help":
         print("Usage:")
-        print("./crypter --crypt [-n <number>] <inputfile> <outputfile>")
-        print("./crypter --decrypt [-n <number>] <inputfile> <outputfile>")
+        print("./crypter --crypt <inputfile> <outputfile>")
+        print("./crypter --decrypt <inputfile> <outputfile>")
         print("./crypter --help")
         return
     
     mode = sys.argv[1]
-    input_file = sys.argv[-2]
-    output_file = sys.argv[-1]
-
-    key = None
-    if "-n" in sys.argv:
-        index = sys.argv.index("-n")
-        if len(sys.argv) > index + 1:
-            key = sys.argv[index + 1]
-    else:
-        key = input("Please enter a ten-digit number: ")
-
-        if len(key) != 10 or not key.isdigit():
-            print("Invalid input for the key.")
-            return
+    input_file = sys.argv[2]
+    output_file = sys.argv[3]
 
     with open(input_file, 'r') as f:
         input_text = f.read().replace('\n', '')
+
+    key = input("Please enter a ten-digit number: ")
+    if len(key) != 10 or not key.isdigit():
+        print("Invalid input for the key.")
+        return
 
     encrypted_decrypted_text = encrypt_decrypt(input_text, key, mode)
 
