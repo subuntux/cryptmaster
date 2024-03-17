@@ -21,17 +21,13 @@ jobs:
 
     - name: Build Debian package
       run: |
+        cd build  # Wechsle in den Ordner, in dem sich die Quelldateien und der Debian-Ordner befinden
         dpkg-buildpackage -us -uc
         # Bewege das Debian-Paket in das Arbeitsverzeichnis des Runners
-        mv ../cryptmaster_1.3_all.deb $HOME
-
-    - name: Find Debian package
-      run: |
-        DEB_FILE=$(find $HOME -maxdepth 1 -type f -name 'cryptmaster_1.3_all.deb' -print -quit)
-        echo "Debian package found at: $DEB_FILE"
+        mv ../*.deb $HOME/debian-package.deb
 
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
         name: debian-package
-        path: $DEB_FILE
+        path: $HOME/debian-package.deb
