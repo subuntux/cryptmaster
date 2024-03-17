@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	dh_auto_install
+# Kopiere main.py (als serv-guy) in den /bin/-Ordner
+	mkdir -p $(CURDIR)/debian/cryptmaster/bin
+	cp $(CURDIR)/crypter.py $(CURDIR)/debian/cryptmaster/bin/crypter
+

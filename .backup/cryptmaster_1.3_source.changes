@@ -1,0 +1,44 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Wed, 16 Mar 2024 12:00:00 +0000
+Source: cryptmaster
+Built-For-Profiles: noudeb
+Architecture: source
+Version: 1.3
+Distribution: mantic
+Urgency: high
+Maintainer: Alexander Krefting <kakrefting@gmail.com>
+Changed-By: Alexander Krefting <kakrefting@gmail.com>
+Changes:
+ cryptmaster (1.3) mantic; urgency=high
+ .
+   * SOS
+Checksums-Sha1:
+ 035c9233e0c480f08e16906cb3fa413d42e59e02 1208 cryptmaster_1.3.dsc
+ bd608d47fbc1a7559acde1423ae36298d08f9839 1108 cryptmaster_1.3.tar.gz
+ 5386a8ba78555c6de291b17cff1d6c94223c2ec4 5733 cryptmaster_1.3_source.buildinfo
+Checksums-Sha256:
+ 14ab8429bf56ac3cc2f84faac2f7b8c15968f17898b8764754edc0c14de5c00f 1208 cryptmaster_1.3.dsc
+ 80c68a9f2452213f541c7c62744720a0088ea967720dd70f67a2ec067d4df1e5 1108 cryptmaster_1.3.tar.gz
+ c544941bccd5911bd6cb639ce7f6f59c5237803def739b90b2f3f10aa7ca301e 5733 cryptmaster_1.3_source.buildinfo
+Files:
+ f4e183c46805708ca235f748918264c2 1208 utils important cryptmaster_1.3.dsc
+ 621c2c3a81cbd691f1e0604673c3b830 1108 utils important cryptmaster_1.3.tar.gz
+ f8a2a74e9e518c7ad2ee1420020f1ffd 5733 utils important cryptmaster_1.3_source.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEZqbPTSgZGEpMakPZVAg0d6KegTQFAmX3ZIEACgkQVAg0d6Ke
+gTQCKwv+IGPB+CYomuFm58AY6m/x1CCOmKdSB8rqBh3VjsikF+s4g/PO7PEpuLeS
+Ez4k+CLUWtB/HwB6pHXDj8DgXVWXSnlJh34Wf35j90G3MCO2H0/ZsKFL8KDQh4Qj
+neIQSWBMoJJ0MlU6QPT5j3nOwooO882bsvL8MW18/fUfYz9qea/hkeJ116ITuG/W
+8DEOLSzOXlOV4S8CNSvx/HxnfQVkFpaQ07s1+BZ5C0kZr9wNmrkUMNMJTchSRi1U
+qaZwSgpxEt2J6qKODLaxb8xLo0yllkSWvD3HYJGTAlDGmMEDmW1gHPtkUO18zKs6
+7YYLVUnFnHJI12KNKll0guVAtvVYGOuEVdgaw6LEMo5uh54Kw4fHRErdCzyD0TAV
+9VXaozcD0xwGojs1ObeDLmDVI7b+7UFGN1PDL5KRySitZHGVIN6/Uh9PCAPym7Cd
+CzCHf2TIPkyrQuy+FRpGy9H4cwCfRcuyS/Iak78f7XKPG8Dp5hGLn5tIoqJYFtQk
+K+rT3eNN
+=U4fo
+-----END PGP SIGNATURE-----

@@ -1,0 +1,10 @@
+Source: cryptmaster
+Section: utils
+Priority: important
+Maintainer: Alexander Krefting <kakrefting@gmail.com>
+Build-Depends: debhelper-compat (= 12)
+
+Package: cryptmaster
+Architecture: all
+Depends: python3
+Description: Safe your Messages
