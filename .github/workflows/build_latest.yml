@@ -23,15 +23,10 @@ jobs:
       run: |
         dpkg-buildpackage -us -uc
         # Bewege das Debian-Paket in das Arbeitsverzeichnis des Runners
-        mv ../../*.deb $GITHUB_WORKSPACE
-
-    - name: Find Debian package
-      run: |
-        DEB_FILE=$(find $GITHUB_WORKSPACE -type f -name '*.deb' -print -quit)
-        echo "Debian package found at: $DEB_FILE"
+        mv ../cryptmaster_1.3_all.deb $HOME/debian-package.deb
 
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
         name: debian-package
-        path: $DEB_FILE
+        path: $HOME/debian-package.deb
